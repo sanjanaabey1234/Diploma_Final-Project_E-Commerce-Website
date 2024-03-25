@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --yellow:#fed330;
+   --red:#e74c3c;
+   --white:#fff;
+   --black:#222;
+   --light-color:#777;
+   --border:.2rem solid var(--black);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear;
+}
+
+*::selection{
+   background-color: var(--yellow);
+   color:var(--black);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--yellow);
+   border-radius: 5rem;
+}
+
+section{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:2rem;
+}
+
+.header{
+   position: sticky;
+   top:0; left:0; right: 0;
+   z-index: 1000;
+   border-bottom: var(--border);
+   background-color: var(--white);
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header .flex .logo{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a{
+   margin:0 1rem;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a:hover{
+   color:var(--yellow);
+}
+
+.header .flex .icons > *{
+   font-size: 2.5rem;
+   color:var(--black);
+   margin-left: 1.5rem;
+   cursor: pointer;
+}
+
+.header .flex .icons > *:hover{
+   color:var(--yellow);
+}
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+   }
+}
+
+.header .flex .profile{
+   width: 30rem;
+   position: absolute;
+   top:120%; right: 2rem;
+   background-color: var(--white);
+   border:var(--border);
+   padding:1.5rem;
+   text-align: center;
+   display: none;
+   animation: fadeIn .2s linear;
+}
+
+.header .flex .profile.active{
+   display: block;
+}
+
+.header .flex .profile .name{
+   font-size: 1.7rem;
+   margin-bottom: .5rem;
+}
+
+.header .flex .profile .account{
+   font-size: 1.7rem;
+   color:var(--light-color);
+   margin-top: 1.5rem;
+}
+
+.header .flex .profile .account a{
+   color:var(--black);
+   text-decoration: underline;
+}
+
+.header .flex .profile .account a:hover{
+   color:var(--yellow);
+}
+
+#menu-btn{
+   display: none;
+}
+
+.user-details .user{
+   border:var(--border);
+   padding:2rem;
+   max-width: 40rem;
+   margin:0 auto;
+}
+
+.user-details .user img{
+   width: 100%;
+   height: 15rem;
+   object-fit: contain;
+   margin-bottom: 2rem;
+}
+
+.user-details .user p{
+   line-height: 1.5;
+   margin-bottom: .5rem;
+   font-size: 2rem;
+}
+
+.user-details .user p span{
+   color:var(--black);
+}
+
+.user-details .user i{
+   margin-right: .7rem;
+   color:var(--light-color);
+}
+
+.user-details .user p.address{
+   margin-top: 2rem;
+}
+
+@media (max-width:991px){
+
+   html{
+      font-size: 55%;
+   }
+
+}
+
+@media (max-width:768px){
+
+   #menu-btn{
+      display: inline-block;
+   }
+
+   .header .flex .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      border-top: var(--border);
+      border-bottom: var(--border);
+      background-color: var(--white);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .flex .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .flex .navbar a{
+      display: block;
+      margin:2rem;
+   }
+
+}
+
+@media (max-width:450px){
+
+   html{
+      font-size: 50%;
+   }
+
+   .title{
+      font-size: 3rem;
+   }
+
+   .header .flex .logo{
+      font-size: 2rem;
+   }
+
+   .products .box-container{
+      grid-template-columns: 1fr;
+   
+   }
+
+}
+

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+<style type="text/css">
+.slider{
+    width: 1250px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+
+
+    height: 100%;
+
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Home Background -->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+   
+<header class="header">
+
+   <section class="flex">
+      
+      <a href="home.html" class="logo"><img src="images/image333.jpg" style="width:50px; height:50px;">Mr.Icecream </a>
+
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="http://localhost/products.php">Menu</a>
+		 <a href="about.html">About</a>
+         
+      </nav>
+
+      <div class="icons">
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="account"><a href="login.html">LogOut</a></a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<br/><br/>
+<div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="images/1.png" style="width:1250px; " alt="">
+            </div>
+            <div class="item">
+                <img src="images/2.png" style="width:1250px; " alt="">
+            </div>
+            <div class="item">
+                <img src="images/3.png" style="width:1250px; " alt="">
+            </div>
+            <div class="item">
+                <img src="images/4.png" style="width:1250px; " alt="">
+            </div>
+
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+	
+<!-- Home Background 
+<section class="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order Icecream</span>
+               <h3>Let's Get Ice cream</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home1.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>find your flavour</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home2.png" alt="">
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="content">
+               <span>order online</span>
+               <h3>best flavours from us</h3>
+               <a href="http://localhost/products.php" class="btn">see menus</a>
+            </div>
+            <div class="image">
+               <img src="images/home3.png" alt="">
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>-->
+
+<!--description-->
+
+<section class="products">
+
+   <h1 class="title">Our Ice Cream Gallery</h1>
+
+   <div class="box-container">
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery1.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery2.jpg" alt="">
+         <div class="name">chocolate vanila mix icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery3.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery4.jpg" alt="">
+         <div class="name">chocolate vanila mix icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery7.jpg" alt="">
+         <div class="name">chocolate icecream</div>
+      </form>
+
+      <form accept="" method="post" class="box">
+         <img src="images/gallery8.jpg" alt="">
+         <div class="name">Strawberry icecream</div>
+      </form>
+
+   </div>
+
+  
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+      
+         <h3>our email</h3>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+      </div>
+
+      <div class="box">
+    
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm </p>
+      </div>
+
+      <div class="box">
+      
+         <h3>our address</h3>
+         <a href="https://www.google.com/maps">SriLanka Matara </a>
+      </div>
+
+      <div class="box">
+         
+         <h3>our number</h3>
+         <a href="tel:1234567890">0769652149</a>
+         <a href="tel:1112223333">0778890012</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2023 by <span>web design group of NIBM</span> | all rights reserved!</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+   <img src="images/icecream.gif" alt="">
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+
+<script>
+let slider = document.querySelector('.slider .list');
+let items = document.querySelectorAll('.slider .list .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+let dots = document.querySelectorAll('.slider .dots li');
+
+let lengthItems = items.length - 1;
+let active = 0;
+next.onclick = function(){
+    active = active + 1 <= lengthItems ? active + 1 : 0;
+    reloadSlider();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : lengthItems;
+    reloadSlider();
+}
+let refreshInterval = setInterval(()=> {next.click()}, 3000);
+function reloadSlider(){
+    slider.style.left = -items[active].offsetLeft + 'px';
+     
+    let last_active_dot = document.querySelector('.slider .dots li.active');
+    last_active_dot.classList.remove('active');
+    dots[active].classList.add('active');
+
+    clearInterval(refreshInterval);
+    refreshInterval = setInterval(()=> {next.click()}, 5000);
+
+    
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener('click', ()=>{
+         active = key;
+         reloadSlider();
+    })
+})
+window.onresize = function(event) {
+    reloadSlider();
+};
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+   <link rel="stylesheet" href="https://cdn.korzh.com/metroui/v4.5.1/css/metro-all.min.css">
+   
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+      
+      <a href="home.html" class="logo"><img src="images/image333.jpg" style="width:50px; height:50px;">AllinOne</a>
+
+      <nav class="navbar">
+         <a href="home.html"><img src="icons/home.gif" style="height:37px;weight:37px;">Home</a>
+         <a href="Learning.html"><img src="icons/online-learning.gif" style="height:37px;weight:37px;">Learning</a>
+		 <a href="services.html"><img src="icons/service.gif" style="height:37px;weight:37px;">services</a>
+		 <a href="about.html"><img src="icons/information.gif" style="height:37px;weight:37px;">About</a>
+         
+      </nav>
+
+      <div>
+	  
+	  <a href="http://localhost/FinalProject/login.php">
+	  <div id="user-btn"><img src="icons/message.gif" style="height:37px;weight:37px;"></div></a>
+	  
+	  <a href="http://localhost/FinalProject/registerform.html">
+	  <div id="login-btn"><img src="icons/logout.gif" style="height:37px;weight:37px;"></div></a>
+	  
+	 
+	  <div id="menu-btn" class="fas fa-bars"></div>
+    
+      </div>
+      
+
+   </section>
+
+</header>
+
+<section>
+		<video id="slider" autoplay muted loop>
+			<source src="video/video1.mp4" type="video/mp4">
+		</video>
+		<ul class="navigation">
+			<li onclick="videoselector('video/video1.mp4')"><img src="images/video1.png" height="100px" width="150px"></li>
+			<li onclick="videoselector('video/video2.mp4')"><img src="images/video2.png" height="100px" width="150px"></li>
+			<li onclick="videoselector('video/video3.mp4')"><img src="images/video3.png" height="100px" width="150px"></li>
+			<li onclick="videoselector('video/video4.mp4')"><img src="images/video4.png" height="100px" width="150px"></li>
+		</ul>
+	</section>
+	<script type="text/javascript">
+		function videoselector (videoLink) {
+			document.getElementById('slider').src=videoLink;
+		}
+	</script>
+
+<!--description-->
+
+<section class="products">
+
+   <h1 class="title">Category</h1>
+
+   <div class="box-container">
+ 
+      <div class="hover01 column">
+      <div>
+      <figure>
+	  <a href="http://localhost/FinalProject/Foods.html">
+	  <img src="images/foods1.jpg" alt="" style="height:200px;weight:200px;"/></a></figure>
+      <span>FOODS</span>
+      </div>
+      </div>
+	  
+	  <div class="hover01 column">
+      <div>
+      <figure>
+	  <a href="http://localhost/FinalProject/Smallbusiness.html">
+	  <img src="images/smallbusiness1.jpg" alt="" style="height:200px;weight:200px;"/></a></figure>
+      <span>SMALL BUISNESS</span>
+      </div>
+      </div>
+	  
+	  <div class="hover01 column">
+      <div>
+      <figure>
+	  <a href="http://localhost/FinalProject/Learning.html">
+	  <img src="images/learning1.jpg" alt="" style="height:200px;weight:200px;" /></a></figure>
+      <span>LEARNING</span>
+      </div>
+      </div>
+	  
+	  <div class="hover01 column">
+      <div>
+      <figure>
+	  <a href="http://localhost/FinalProject/Transport.html">
+	  <img src="images/transport1.jpg" alt="" style="height:200px;weight:200px;" /></a></figure>
+      <span>TRANSPORT</span>
+      </div>
+      </div>
+	  
+	  <div class="hover01 column">
+      <div>
+      <figure>
+	  <a href="http://localhost/FinalProject/other.html">
+	  <img src="images/other1.jpg" alt="" style="height:200px;weight:200px;" /></a></figure>
+      <span>Other</span>
+      </div>
+      </div>
+	  
+   
+
+   </div>
+
+  
+
+</section>
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+      
+         <h3>our email</h3>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+      </div>
+
+      <div class="box">
+    
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm </p>
+      </div>
+
+      <div class="box">
+      
+         <h3>our address</h3>
+         <a href="https://www.google.com/maps">SriLanka Matara </a>
+      </div>
+
+      <div class="box">
+         
+         <h3>our number</h3>
+         <a href="tel:1234567890">0769652149</a>
+         <a href="tel:1112223333">0778890012</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2023 by <span>web design group of NIBM</span> | all rights reserved!</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="loader">
+   <video autoplay plays-inline muted class="back-video">
+        <source src="video2.mp4" type="video/mp4">
+      </video>
+</div>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.korzh.com/metroui/v4.5.1/js/metro.min.js"></script>
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+
+</body>
+</html>

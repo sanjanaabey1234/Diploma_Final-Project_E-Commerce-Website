@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>about</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" href="css/aboutstyles.css">
+</head>
+<body>
+
+<!-- Products Background -->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+<header class="header">
+
+   <section class="flex">
+
+
+      <a href="home1.html" class="logo">Mr.Icecream</a>
+
+      <nav class="navbar">
+         <a href="home.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="http://localhost/products.php">Menu</a>
+		
+         <a href="cart.php" class="cart">cart <span><?php echo $row_count; ?></span> </a>
+
+      </nav>
+
+      <div class="icons">
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>      
+
+</header>
+<div class="wrapper">
+    <h1>Our Team Members</h1>
+    <div class="our_team">
+        <div class="team_member">
+          <div class="member_img">
+             <img src="images/image4.jpg" alt="our_team">
+          </div>
+          <h2>Sanjana Abeysirigunawardana</h2>
+		  <h3>MADSE221F-037</h3>
+        <br><h3>Team Leader And Project Manager</h3>
+		        
+        </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="images/image2.png.jpg" alt="our_team">
+          </div>
+          <h2>Javindu Gunasekara</h2>
+		  <h3>MADSE221F-036</h3>
+        <h3>Team Member</h3>
+ 
+      </div>
+        <div class="team_member">
+           <div class="member_img">
+             <img src="images/image1.jpg" alt="our_team">
+          </div>
+          <h2>Nimanthaka Bhashana</h2>
+		  <h3>MADSE221F-039</h3>
+        <h3>Team Member</h3>
+
+      </div>
+
+    </div>
+</div>	
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+<script>
+
+var swiper = new Swiper(".home-slider", {
+   loop:true,
+   grabCursor:true,
+   effect: "flip",
+   pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+   },
+});
+
+</script>
+</body>
+</html>

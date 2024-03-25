@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+   --yellow:#fed330;
+   --red:#e74c3c;
+   --white:#fff;
+   --black:#222;
+   --light-color:#777;
+   --border:.2rem solid var(--black);
+}
+
+*{
+   font-family: 'Rubik', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: .2s linear;
+}
+
+*::selection{
+   background-color: var(--yellow);
+   color:var(--black);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 8rem;
+}
+
+section{
+   max-width: 1200px;
+   margin:0 auto;
+   padding:2rem;
+}
+
+.header{
+   position: sticky;
+   top:0; left:0; right: 0;
+   z-index: 1000;
+   border-bottom: var(--border);
+   background-color: var(--white);
+}
+
+.header .flex{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.header .flex .logo{
+   font-size: 2.5rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a{
+   margin:0 1rem;
+   font-size: 2rem;
+   color:var(--black);
+}
+
+.header .flex .navbar a:hover{
+   color:var(--yellow);
+}
+
+.header .flex .icons > *{
+   font-size: 2.5rem;
+   color:var(--black);
+   margin-left: 1.5rem;
+   cursor: pointer;
+}
+
+.header .flex .icons > *:hover{
+   color:var(--yellow);
+}
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+   }
+}
+
+.header .flex .profile{
+   width: 30rem;
+   position: absolute;
+   top:120%; right: 2rem;
+   background-color: var(--white);
+   border:var(--border);
+   padding:1.5rem;
+   text-align: center;
+   display: none;
+   animation: fadeIn .2s linear;
+}
+
+.header .flex .profile.active{
+   display: block;
+}
+
+.header .flex .profile .name{
+   font-size: 1.7rem;
+   margin-bottom: .5rem;
+}
+
+.header .flex .profile .account{
+   font-size: 1.7rem;
+   color:var(--light-color);
+   margin-top: 1.5rem;
+}
+
+.header .flex .profile .account a{
+   color:var(--black);
+   text-decoration: underline;
+}
+
+.header .flex .profile .account a:hover{
+   color:var(--yellow);
+}
+
+#menu-btn{
+   display: none;
+}
+
+::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+   background-color: var(--yellow);
+   border-radius: 5rem;
+}
+
+
+
+/* reviews */
+
+.reviews{
+    background-color: var(--bg-color);
+}
+
+.reviews .slide{
+    text-align: center;
+}
+
+.reviews .slide p{
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #a6a9ab;
+    position: relative;
+    background: var(--primary-color);
+    border: 0.1rem solid var(--main-color);
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.reviews .slide p::before{
+    content: '';
+    position: absolute;
+    bottom: -1.2rem;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    background: var(--primary-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    border-right: 0.1rem solid var(--main-color);
+    height: 2rem;
+    width: 2rem;
+}
+
+.reviews .slide img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.reviews .slide h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding: .5rem 0;
+}
+
+.reviews .slide .stars{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    margin-bottom: 3rem;
+}
+
+.swiper-pagination-bullet-active{
+    background: var(--main-color);
+}

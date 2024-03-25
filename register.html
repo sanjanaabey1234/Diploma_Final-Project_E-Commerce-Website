@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   
+</head>
+<body>
+   
+<header class="header">
+
+   <section class="flex">
+
+      <a href="home.html" class="logo">Mr.Icecream</a>
+
+     
+
+      <div class="icons">
+      
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="menu-btn" class="fas fa-bars"></div>
+      </div>
+
+      <div class="profile">
+         <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+      </div>
+
+   </section>
+
+</header>
+
+<section class="form-container">
+
+   <form action="http://localhost/register.php" method="post">
+      <h3>register now</h3>
+      <input type="text" required maxlength="20" name="name" placeholder="enter your name" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="email" required maxlength="50" name="email" placeholder="enter your email" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="numner" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" placeholder="enter your number" required class="box" name="number">
+      <input type="password" required maxlength="20" name="pass" placeholder="enter your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="password" required maxlength="20" name="cpass" placeholder="confirm your password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+      <input type="submit" value="register now" class="btn" name="submit"onclick=return validateform();">
+      <p>already have an account? <a href="login.html">login now</a></p>
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   <section class="box-container">
+
+      <div class="box">
+       
+         <h3>our email</h3>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+         <a href="mailto:theekshanaamaraweera@gmail.com">theekshanaamaraweera@gmail.com</a>
+      </div>
+
+      <div class="box">
+        
+         <h3>opening hours</h3>
+         <p>09:00am to 10:00pm </p>
+      </div>
+
+      <div class="box">
+         
+         <h3>our address</h3>
+         <a href="https://www.google.com/maps">SriLanka Matara </a>
+      </div>
+
+      <div class="box">
+     
+         <h3>our number</h3>
+         <a href="tel:1234567890">0769652149</a>
+         <a href="tel:1112223333">0778890012</a>
+      </div>
+
+   </section>
+
+   <div class="credit">&copy; copyright @ 2023 by <span>web design group of NIBM</span> | all rights reserved!</div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
